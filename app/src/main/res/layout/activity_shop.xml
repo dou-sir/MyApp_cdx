@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/activity_shop"
+    android:background="@drawable/bg2"
+    tools:context="com.jit.cdx.myapp_cdx.ShopActivity">
+
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:paddingTop="20dp">
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/back2"
+            android:background="#00000000"
+            android:scaleType="fitXY"
+            android:id="@+id/ib_back"/>
+
+        <TextView
+            android:id="@+id/tv_sname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ib_back"
+            android:layout_centerHorizontal="true"
+            android:text="店铺名"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ib_back"
+            android:layout_toEndOf="@+id/ib_back"
+            android:layout_marginTop="5dp"
+            android:text="联系方式:" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="50dp"
+            android:layout_below="@+id/tv_sname"
+            android:layout_marginTop="5dp"
+            android:text="地址:" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:orientation="horizontal">
+        <ListView
+            android:id="@+id/lv_left"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+        </ListView>
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/lv_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </se.emilsjolander.stickylistheaders.StickyListHeadersListView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/rl_cart">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="5dp"
+            android:src="@drawable/packet"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:layout_marginLeft="60dp"
+            android:text="0件商品\n共0元"
+            android:textSize="16dp"
+            android:id="@+id/tv_cost"/>
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="#fff"
+            android:enabled="false"
+            android:paddingRight="10dp"
+            android:text="请选择商品"
+            android:textColor="#777"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

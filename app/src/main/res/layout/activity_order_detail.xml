@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="感谢您对红苹果的信任,期待再次光临"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ff5f3e"
+        />
+
+    <ImageView
+        android:id="@+id/iv_huodong"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/huodong"
+        android:layout_below="@id/tv_welcome"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_shopname"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/tv_welcome"
+        android:layout_below="@+id/iv_huodong"
+        android:text="商家名称"
+        android:textSize="30dp" />
+
+    <ListView
+        android:id="@+id/lv_order_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shopname">
+    </ListView>
+
+    <TextView
+        android:id="@+id/tv_addressInfo"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="配送信息"
+        android:textSize="30dp"
+        android:layout_alignStart="@id/tv_welcome"
+        android:layout_below="@id/lv_order_detail_list"/>
+
+    <LinearLayout
+        android:id="@+id/ll_useraddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_addressInfo"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="配送地址："
+            android:textSize="15dp"
+            />
+        <TextView
+            android:id="@+id/tv_user_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人姓名、电话、地址"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_ordertime"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="下单时间"
+        android:textSize="30dp"
+        android:layout_alignStart="@id/tv_welcome"
+        android:layout_below="@id/ll_useraddress"/>
+    <TextView
+        android:id="@+id/tv_order_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下单的时间"
+        android:layout_below="@id/tv_ordertime"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_ordercost"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:text="合计:"
+        android:layout_below="@id/tv_order_time"
+        android:layout_marginLeft="270dp"/>
+    <TextView
+        android:id="@+id/tv_order_cost"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:text="XX元"
+        android:layout_toRightOf="@id/tv_ordercost"
+        android:layout_below="@+id/tv_order_time"/>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textColor="#ff5f3e"
+        android:layout_below="@+id/tv_order_cost"
+        android:layout_marginLeft="280dp"
+        android:onClick="Back"
+        />
+    <Button
+        android:id="@+id/btn_onceagain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="180dp"
+        android:text="再来一单"
+        android:textColor="#0097ff"
+        android:layout_below="@id/tv_ordercost"
+        android:onClick="OneMoreOrder"/>
+
+
+
+</RelativeLayout>

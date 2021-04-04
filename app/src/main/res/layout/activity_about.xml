@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="X"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:textColor="#00eaff"
+            android:onClick="back"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关于我们"
+        android:textSize="50dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/apple"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="红苹果"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  红苹果是由CDX开发小组开发的一款实用的外卖软件，其功能强大，包括用户下单修改信息，取消订单等。界面优美，操作简单，界面设计人性化，用户不需要系统的学习即能流畅的使用。其中还包括超市功能，能够让用户足不出户就能选购到超市里的各种商品。开发小组的成员包括：陈炜楠、窦洋羊、徐优。"
+        android:textSize="15dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CDX开发小组"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="260dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
